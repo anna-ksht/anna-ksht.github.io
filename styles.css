@@ -85,6 +85,7 @@ a:hover {
 .intro {
   width: 70%;
   margin: auto;
+  position: relative;
 }
 
 .leave-picture {
