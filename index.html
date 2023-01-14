@@ -1,1 +1,107 @@
-From Zero To Hero
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Anna K</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="computer.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="top-container">
+    <img class="anna-picture" src="anna.png" alt="my-photo">
+    <div class="intro">
+      <h1>Hello,</h1>
+      <h1>I'm Anna Kashtelyan</h1>
+      <h3 style="margin: 20px 140px 8px 340px;">I'm 25 and I'm a Junior Web Developer, I used to be an English Teacher, but now work with code.</h3>
+      <img class="leave-picture" src="leave.png" style="max-width:100%;height:auto;" alt="leave-photo">
+    </div>
+  </header>
+
+  <main class="middle-container">
+
+    <div class="education">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <td style="text-align: right;">2022</td>
+          <td>The Complete Online Web Development Bootcamp,
+            AppBrewery, Full-Stack Web Developer</td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">2021</td>
+          <td>Vilnius University, English Studies</td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">2020</td>
+          <td>Minsk State Linguistic University, English Teaching</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="facts">
+      <h2 style="color: #6f946c; padding-bottom: 30px">Facts about me</h2>
+      <div class="mySlides">
+        <div class="w3-container w3-red">
+          <h3 style="color: #301e1b"><b>I'm a karate instructor.</b></h3>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="w3-container w3-red">
+          <h3 style="color: #301e1b"><b>I lived in 3 different countries during Covid lockdown.</b></h3>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="w3-container w3-red">
+          <h3 style="color: #301e1b"><b>I'm an excellent English Teacher.</b></h3>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="w3-container w3-red">
+          <h3 style="color: #301e1b"><b>I love yoga, cooking and dogs.</b></h3>
+        </div>
+      </div>
+
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {
+            slideIndex = 1
+          }
+          x[slideIndex - 1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+      </script>
+    </div>
+  </main>
+
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3 class="if">If you appreciate beauty and calmness, contact me!</h3>
+    <h3 class="if">+375-25-942-03-57</h3>
+    <a class="btn" href="mailto:anna.ksht@gmail.com">CONTACT ME</a>
+  </div>
+
+  <footer class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/anna-kashtelyan-1a6ab2260/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/anna-ksht">GitHub</a>
+    <h3>2023 © Anna Kashtelyan.</h3>
+  </footer>
+</body>
+</html>
